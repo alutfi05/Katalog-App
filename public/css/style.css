@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #DC2F2E;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    background-color: #f4f8fb;
+}
+
+.container {
+    padding: 0 2rem;
+}
+
+.header-title {
+    font-size: 24px;
+    text-align: center;
+    color: var(--primary-color);
+    padding: 35px 0;
+}
+
+nav {
+    background-color: white;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+    list-style: none;
+}
+
+nav ul li>a {
+    text-decoration: none;
+    padding: 8px 16px;
+    color: #333;
+}
+
+nav ul li>a:hover {
+    color: white;
+    background-color: #333;
+    transition: 0.4s;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-grow: 8;
+}
+
+.item {
+    border-radius: 4px;
+    margin: 32px 16px 16px 16px;
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 8px 14px 38px rgb(39 44 49 / 6%), 1px 3px 8px rgb(39 44 49 / 3%);
+    text-decoration: none;
+    color: #333;
+    transition: all 0.5s ease;
+}
+
+.item-body h3 {
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.item:hover {
+    box-shadow: 8px 14px 38px rgb(39 44 49 / 4%), 1px 3px 8px rgb(39 44 49 / 1%);
+    transform: translate3d(0, -1px, 0) scale(1.1);
+    transition: all 0.2s ease;
+}
+
+.item img {
+    width: 200px;
+    height: 200px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.contact, .detail {
+    display: flex;
+}
+
+.contact:hover, .detail:hover {
+    transform: none;
+}
+
+.contact .item-body {
+    margin-left: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.detail {
+    max-width: 50%;
+}
+
+.detail h3 {
+    font-size: 32px;
+    margin-bottom: 0.5rem;
+    font-weight: normal;
+}
+
+.detail .price {
+    font-size: 20px;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+}
+
+.detail .item-body {
+    margin-left: 0.5rem;
+}
+
+.detail .description {
+    margin-top: 2rem;
+}
